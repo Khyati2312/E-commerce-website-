@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    height: 150vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 15px 0;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li.active a {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.sidebar .section {
+    font-size: 15px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header-icons a {
+    color: #333;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cards-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.customers p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.customers p span {
+    font-size: 14px;
+    color: #666;
+}
+
+.featured-product {
+    text-align: center;
+}
+
+.sales-analytics {
+    text-align: center;
+}

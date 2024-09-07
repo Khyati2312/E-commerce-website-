@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="inbox.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>DashStack</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="favourites.html">Favorites</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li class="section">Pages</li>
+                <li><a href="order_lists.html">Order Lists</a></li>
+                <li><a href="product_stock.html">Product Stock</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="to_do.html">To-Do</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="invoice.html">Invoice</a></li>
+                <li><a href="ui_elements.html">UI Elements</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="header-icons">
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="#"><i class="fas fa-flag"></i></a>
+                    <a href="#">English <i class="fas fa-angle-down"></i></a>
+                    <a href="#" class="user-profile">
+                        <img src="https://via.placeholder.com/30" alt="User">
+                        Gandhi Khyati
+                    </a>
+                </div>
+            </header>
+            
+        <!-- Inbox Section -->
+    <div class="inbox-section">
+        <div>
+            <div class="left-card">
+                <button class="compose-btn">+ Compose</button>
+                <div class="sidebar-inbox">
+                    <a href="#"><i class="fas fa-inbox"></i> Inbox</a>
+                    <a href="#"><i class="fas fa-star"></i> Starred</a>
+                    <a href="#"><i class="fas fa-paper-plane"></i> Sent</a>
+                    <a href="#"><i class="fas fa-file-alt"></i> Draft</a>
+                    <a href="#"><i class="fas fa-trash-alt"></i> Bin</a>
+                    
+                    <p class="sidebar-title">Labels</p>
+                    <a href="#"><i class="fas fa-tag"></i> Primary</a>
+                    <a href="#"><i class="fas fa-tag"></i> Social</a>
+                    <a href="#"><i class="fas fa-tag"></i> Work</a>
+                    <a href="#"><i class="fas fa-tag"></i> Friends</a>
+                </div>
+            </div>
+        </div>
+
+            <div class="right-card">
+                <div class="right-card-header">
+                    <input type="text" class="search-bar-right" placeholder="Search mail">
+                    <div class="right-icons">
+                        <i class="fas fa-info-circle"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+
+                <div class="email-list">
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <i class="fas fa-star"></i>
+                        <div class="email-details">
+                            <p class="sender">Julia Jalal</p>
+                            <p class="subject">Our Bachelor of Commerce program...</p>
+                        </div>
+                        <p class="time">8:38 AM</p>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox">     
+                        <div class="email-details">
+                            <p class="sender">Minerva Barnett</p>
+                            <p class="subject">Get Best Advertiser in your side pocket...</p>
+                        </div>
+                        <p class="time">8:13 AM</p>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <i class="fas fa-star"></i>
+                        <div class="email-details">
+                            <p class="sender">Peter Lewis</p>
+                            <p class="subject">Vacation Home Rental Success...</p>
+                        </div>
+                        <p class="time">7:52 AM</p>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <div class="email-details">
+                            <p class="sender">Anthony Briggs</p>
+                            <p class="subject">Free Classisfied Using Them to promote your stuff online...</p>
+                        </div>
+                        <p class="time">7:52 AM</p>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <i class="fas fa-star"></i>
+                        <div class="email-details">
+                            <p class="sender">Harvey Manning </p>
+                            <p class="subject">Always look on the bright side of life...</p>
+                        </div>
+                        <p class="time">3:52 AM</p>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <div class="email-details">
+                            <p class="sender">Olga Hogan</p>
+                            <p class="subject">Enhance your brand potential with giant advertising blimps</p>
+                        </div>
+                        <p class="time">4:13 AM</p>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <i class="fas fa-star"></i>
+                        <div class="email-details">
+                            <p class="sender">Willie Blake</p>
+                            <p class="subject">Our Bacheloe of commerce program in ACBSP-accredited</p>
+                        </div>
+                        <p class="time">2:30 AM</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

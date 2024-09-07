@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Lists</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>DashStack</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="favourites.html">Favorites</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li class="section">Pages</li>
+                <li class="active"><a href="order_lists.html">Order Lists</a></li>
+                <li><a href="product_stock.html">Product Stock</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="to_do.html">To-Do</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="invoice.html">Invoice</a></li>
+                <li><a href="ui_elements.html">UI Elements</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <input type="search" placeholder="Search" class="search-bar">
+                <div class="header-right">
+                    <a href="#" class="notifications">🔔</a>
+                    <a href="#" class="language">🌐 English</a>
+                    <div class="user-info">
+                        <img src="profile.jpg" alt="Profile" class="profile-image">
+                        <div class="profile-details">
+                            <p class="admin-name">Moni Roy</p>
+                            <p class="role">Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="order-lists">
+                <h2>Order Lists</h2>
+                <div class="filters">
+                    <select>
+                        <option>Filter By</option>
+                    </select>
+                    <select>
+                        <option>Date</option>
+                    </select>
+                    <select>
+                        <option>Order Type</option>
+                    </select>
+                    <select>
+                        <option>Order Status</option>
+                    </select>
+                    <button class="reset-filter">Reset Filter</button>
+                </div>
+
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>00001</td>
+                            <td>Christine Brooks</td>
+                            <td>089 Kutch Green Apt. 448</td>
+                            <td>04 Sep 2019</td>
+                            <td>Electric</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>00002</td>
+                            <td>Rosie Pearson</td>
+                            <td>979 Immanuel Ferry Suite 526</td>
+                            <td>28 May 2019</td>
+                            <td>Book</td>
+                            <td><span class="status processing">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>00003</td>
+                            <td>Darrell Caldwell</td>
+                            <td>8587 Frida Ports</td>
+                            <td>23 Nov 2019</td>
+                            <td>Medicine</td>
+                            <td><span class="status rejected">Rejected</span></td>
+                        </tr>
+                        <tr>
+                            <td>00004</td>
+                            <td>Gilbert Johnston</td>
+                            <td>768 Destiny Lake Suite 600</td>
+                            <td>05 Feb 2019</td>
+                            <td>Mobile</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>00005</td>
+                            <td>Alan Cain</td>
+                            <td>042 Mylene Throughway</td>
+                            <td>29 Jul 2019</td>
+                            <td>Watch</td>
+                            <td><span class="status processing">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>00006</td>
+                            <td>Alfred Murray</td>
+                            <td>543 Weinmann Mountain</td>
+                            <td>15 Aug 2019</td>
+                            <td>Medicine</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>00007</td>
+                            <td>Maggie Sullivan</td>
+                            <td>New Scottieberg</td>
+                            <td>21 Dec 2019</td>
+                            <td>Watch</td>
+                            <td><span class="status processing">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>00008</td>
+                            <td>Rosie Todd</td>
+                            <td>New Jon</td>
+                            <td>30 Apr 2019</td>
+                            <td>Medicine</td>
+                            <td><span class="status on_hold">On Hold</span></td>
+                        </tr>
+                        <tr>
+                            <td>00009</td>
+                            <td>Dollie Hines</td>
+                            <td>124 Lyla Forge Suite 975</td>
+                            <td>09 Jan 2019</td>
+                            <td>Book</td>
+                            <td><span class="status in_transit">In Transit</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pagination">
+                    <span>Showing 1-09 of 78</span>
+                    <div class="pagination-controls">
+                        <button>❮</button>
+                        <button>❯</button>
+                    </div>
+                </div>
+
+
+                <div class="top-bar">
+                    <h1>Product Stock</h1>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search product name">
+                    </div>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Piece</th>
+                            <th>Available Color</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://www.bhphotovideo.com/images/images2500x2500/samsung_sm_r835usdaxar_galaxy_watch_active2_lte_1491584.jpg" alt="Apple Watch"></td>
+                            <td>Apple Watch Series 4</td>
+                            <td>Digital Product</td>
+                            <td>$690.00</td>
+                            <td>63</td>
+                            <td>
+                                <div class="color-dots">
+                                    <div class="color-dot" style="background-color: black;"></div>
+                                    <div class="color-dot" style="background-color: gray;"></div>
+                                    <div class="color-dot" style="background-color: pink;"></div>
+                                </div>
+                            </td>
+                            <td class="actions">
+                                <a href="#"><img src="edit-icon.png" alt="Edit"></a>
+                                <a href="#"><img src="delete-icon.png" alt="Delete"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVw-nbozwOCKL6-ZeRA-xJU6iCcOb8ILOLTw&s" alt="Microsoft Headphones"></td>
+                            <td>Microsoft Headphones</td>
+                            <td>Digital Product</td>
+                            <td>$190.00</td>
+                            <td>13</td>
+                            <td>
+                                <div class="color-dots">
+                                    <div class="color-dot" style="background-color: black;"></div>
+                                    <div class="color-dot" style="background-color: pink;"></div>
+                                    <div class="color-dot" style="background-color: blue;"></div>
+                                    <div class="color-dot" style="background-color: yellow;"></div>
+                                </div>
+                            </td>
+                            <td class="actions">
+                                <a href="#"><img src="" alt="Edit"></a>
+                                <a href="#"><img src="" alt="Delete"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9d9r8BC7c8ibY3qkZ8ZEuIHUXfNA8s4UEw&s" alt="Microsoft Headphones"></td>
+                            <td>Women's Dress</td>
+                            <td>Fashion</td>
+                            <td>$640.00</td>
+                            <td>635</td>
+                            <td>
+                                <div class="color-dots">
+                                    <div class="color-dot" style="background-color: maroon;"></div>
+                                    <div class="color-dot" style="background-color:  skyblue;"></div>
+                                    <div class="color-dot" style="background-color: black;"></div>
+                                    <div class="color-dot" style="background-color: blue;"></div>
+                                </div>
+                            </td>
+                            <td class="actions">
+                                <a href="#"><img src="" alt="Edit"></a>
+                                <a href="#"><img src="" alt="Delete"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://i.gadgets360cdn.com/large/samsung_galaxy_a50_front_ndtv_1551965564020.jpg" alt="Microsoft Headphones"></td>
+                            <td>Samsung A50</td>
+                            <td>Mobile</td>
+                            <td>$400.00</td>
+                            <td>67</td>
+                            <td>
+                                <div class="color-dots">
+                                    <div class="color-dot" style="background-color: rgb(25, 25, 82);"></div>
+                                    <div class="color-dot" style="background-color: black;"></div>
+                                    <div class="color-dot" style="background-color: rgb(133, 15, 15);"></div>
+                                </div>
+                            </td>
+                            <td class="actions">
+                                <a href="#"><img src="" alt="Edit"></a>
+                                <a href="#"><img src="" alt="Delete"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxCbIy8pyP69oIjmjF6AuOGnaCIz5A8jwMQ&s" alt="Microsoft Headphones"></td>
+                            <td>Camera</td>
+                            <td>Electronic</td>
+                            <td>$420.00</td>
+                            <td>52</td>
+                            <td>
+                                <div class="color-dots">
+                                    <div class="color-dot" style="background-color: rgb(25, 25, 82);"></div>
+                                    <div class="color-dot" style="background-color: black;"></div>
+                                    <div class="color-dot" style="background-color: rgb(133, 15, 15);"></div>
+                                </div>
+                            </td>
+                            <td class="actions">
+                                <a href="#"><img src="" alt="Edit"></a>
+                                <a href="#"><img src="" alt="Delete"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVw-nbozwOCKL6-ZeRA-xJU6iCcOb8ILOLTw&s" alt="Microsoft Headphones"></td>
+                            <td>Microsoft Headsquare</td>
+                            <td>Digital Product</td>
+                            <td>$190.00</td>
+                            <td>13</td>
+                            <td>
+                                <div class="color-dots">
+                                    <div class="color-dot" style="background-color: black;"></div>
+                                    <div class="color-dot" style="background-color: pink;"></div>
+                                    <div class="color-dot" style="background-color: blue;"></div>
+                                    <div class="color-dot" style="background-color: rgb(255, 230, 0);"></div>
+                                </div>
+                            </td>
+                            <td class="actions">
+                                <a href="#"><img src="" alt="Edit"></a>
+                                <a href="#"><img src="" alt="Delete"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9d9r8BC7c8ibY3qkZ8ZEuIHUXfNA8s4UEw&s" alt="Microsoft Headphones"></td>
+                            <td>Women's Dress</td>
+                            <td>Fashion</td>
+                            <td>$640.00</td>
+                            <td>635</td>
+                            <td>
+                                <div class="color-dots">
+                                    <div class="color-dot" style="background-color: maroon;"></div>
+                                    <div class="color-dot" style="background-color: brgb(66, 180, 188)"></div>
+                                    <div class="color-dot" style="background-color: black;"></div>
+                                    <div class="color-dot" style="background-color: blue;"></div>
+                                </div>
+                            </td>
+                            <td class="actions">
+                                <a href="#"><img src="" alt="Edit"></a>
+                                <a href="#"><img src="" alt="Delete"></a>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

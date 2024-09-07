@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Page</title>
+    <link rel="stylesheet" href="invoice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>DashStack</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="favourites.html">Favorites</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li class="section">Pages</li>
+                <li><a href="order_lists.html">Order Lists</a></li>
+                <li><a href="product_stock.html">Product Stock</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="to_do.html">To-Do</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="invoice.html">Invoice</a></li>
+                <li><a href="ui_elements.html">UI Elements</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="header-icons">
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="#"><i class="fas fa-flag"></i></a>
+                    <a href="#">English <i class="fas fa-angle-down"></i></a>
+                    <a href="#" class="user-profile">
+                        <img src="https://via.placeholder.com/30" alt="User">
+                        Moni Roy
+                    </a>
+                </div>
+            </header>
+            <section class="invoice-section">
+                <h2>Invoice</h2>
+                <div class="invoice-details">
+                    <div class="invoice-from">
+                        <h3>Invoice From:</h3>
+                        <p>Virginia Walker</p>
+                        <p>9694 Krajcik Locks Suite 635</p>
+                    </div>
+                    <div class="invoice-to">
+                        <h3>Invoice To:</h3>
+                        <p>Austin Miller</p>
+                        <p>Brookview</p>
+                    </div>
+                    <div class="invoice-dates">
+                        <p>Invoice Date: 12 Nov 2019</p>
+                        <p>Due Date: 25 Dec 2019</p>
+                    </div>
+                </div>
+                <table class="invoice-table">
+                    <thead>
+                        <tr>
+                            <th>Serial No.</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Base Cost</th>
+                            <th>Total Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Children Toy</td>
+                            <td>2</td>
+                            <td>$20</td>
+                            <td>$80</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Makeup</td>
+                            <td>2</td>
+                            <td>$50</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Asus Laptop</td>
+                            <td>5</td>
+                            <td>$100</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Iphone X</td>
+                            <td>4</td>
+                            <td>$1000</td>
+                            <td>$4000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="invoice-total">
+                    <h3>Total = $4680</h3>
+                </div>
+                <div class="invoice-actions">
+                    <button class="print-btn"><i class="fas fa-print"></i></button>
+                    <button class="send-btn"><i class="fas fa-paper-plane"></i> Send</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

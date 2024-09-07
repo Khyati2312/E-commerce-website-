@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Dashboard</title>
+    <link rel="stylesheet" href="to_do.css">
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>DashStack</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="active"><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="favourites.html">Favorites</a></li>
+            <li><a href="inbox.html">Inbox</a></li>
+            <li class="section">Pages</li>
+            <li><a href="order_lists.html">Order Lists</a></li>
+            <li><a href="product_stock.html">Product Stock</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="to_do.html">To-Do</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="invoice.html">Invoice</a></li>
+            <li><a href="ui_elements.html">UI Elements</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="#"><i class="fas fa-flag"></i></a>
+                <a href="#">English <i class="fas fa-angle-down"></i></a>
+                <a href="#" class="user-profile">
+                    <img src="https://via.placeholder.com/30" alt="User">
+                    Gandhi Khyati
+                </a>
+            </div>
+        </header>
+
+        <section class="todo-section">
+            <div class="todo-header">
+                <h2>To-Do List</h2>
+                <button class="add-task-btn">Add New Task</button>
+            </div>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <input type="checkbox">
+                    <span>Meeting with CEO</span>
+                    <div class="todo-actions">
+                        <span class="star">&#9734;</span>
+                        <span class="cancel">&#10005;</span>
+                    </div>
+                </li>
+                <li class="todo-item">
+                    <input type="checkbox">
+                    <span>Pick up kids from school</span>
+                    <div class="todo-actions">
+                        <span class="star">&#9734;</span>
+                        <span class="cancel">&#10005;</span>
+                    </div>
+                </li>
+                <li class="todo-item">
+                    <input type="checkbox">
+                    <span>Shopping with Brother</span>
+                    <div class="todo-actions">
+                        <span class="star">&#9734;</span>
+                        <span class="cancel">&#10005;</span>
+                    </div>
+                </li>
+                <li class="todo-item highlighted">
+                    <input type="checkbox" checked>
+                    <span>Review with HR</span>
+                    <div class="todo-actions">
+                        <span class="star">&#9734;</span>
+                        <span class="delete">&#128465;</span>
+                    </div>
+                </li>
+                <li class="todo-item">
+                    <input type="checkbox">
+                    <span>Going to Dia's School</span>
+                    <div class="todo-actions">
+                        <span class="star">&#9734;</span>
+                        <span class="cancel">&#10005;</span>
+                    </div>
+                </li>
+                <li class="todo-item">
+                    <input type="checkbox">
+                    <span>Check design files</span>
+                    <div class="todo-actions">
+                        <span class="star">&#9733;</span>
+                        <span class="cancel">&#10005;</span>
+                    </div>
+                </li>
+                <li class="todo-item">
+                    <input type="checkbox">
+                    <span>Update File</span>
+                    <div class="todo-actions">
+                        <span class="star">&#9734;</span>
+                        <span class="cancel">&#10005;</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

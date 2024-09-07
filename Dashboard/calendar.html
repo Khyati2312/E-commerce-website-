@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>DashStack</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="favourites.html">Favorites</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li class="section">Pages</li>
+                <li><a href="order_lists.html">Order Lists</a></li>
+                <li><a href="product_stock.html">Product Stock</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="to_do.html">To-Do</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="invoice.html">Invoice</a></li>
+                <li><a href="ui_elements.html">UI Elements</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="header-icons">
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="#"><i class="fas fa-flag"></i></a>
+                    <a href="#">English <i class="fas fa-angle-down"></i></a>
+                    <a href="#" class="user-profile">
+                        <img src="https://via.placeholder.com/30" alt="User">
+                        Gandhi Khyati
+                    </a>
+                </div>
+            </header>
+        <div class="calendar-container">
+            <div class="events-container">
+                <h2>You are going to</h2>
+        
+                <div class="event-card">
+                    <div class="event-dp" style="background-image: url('/images/team12.webp');"></div>
+                    <div>
+                        <p class="event-name">Meeting with Bob</p>
+                        <p class="event-date">September 10, 2024</p>
+                        <p class="event-location">New York Office</p>
+                    </div>
+                </div>
+        
+                <div class="event-card">
+                    <div class="event-dp" style="background-image: url('/images/team1.jpg');"></div>
+                    <div>
+                        <p class="event-name">Project Launch</p>
+                        <p class="event-date">September 24, 2024</p>
+                        <p class="event-location">Online</p>
+                    </div>
+                </div>
+        
+                <div class="event-card">
+                    <div class="event-dp" style="background-image: url('/images/team5.webp');"></div>
+                    <div>
+                        <p class="event-name">Design Conference</p>
+                        <p class="event-date">September 20, 2024</p>
+                        <p class="event-location">LA</p>
+                    </div>
+                </div>
+        
+                <div class="event-card">
+                    <div class="event-dp" style="background-image: url('/images/team8.webp');"></div>
+                    <div>
+                        <p class="event-name">Weekend Festival</p>
+                        <p class="event-date">September 30, 2024</p>
+                        <p class="event-location">Goa</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Calendar Section -->
+            <div class="calendar-section">
+                <div class="calendar-controls">
+                    <span id="current-month">September 2024</span>
+                    <div class="view-buttons">
+                        <button>Day</button>
+                        <button>Week</button>
+                        <button>Month</button>
+                    </div>
+                </div>
+                <div class="calendar-grid">
+                    <!-- Days of the Week -->
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+    
+                    <!-- Dates with Events -->
+                    <div class="date">
+                        1
+                    </div>
+                    
+                    <div class="date">
+                        2
+                    </div>
+                    <div class="date">
+                        3
+                        <!-- Empty or no event -->
+                    </div>
+                    <div class="date">
+                        4
+                    </div>
+                    <div class="date">
+                        5
+                    </div>
+                    <div class="date">
+                        6
+                    </div>
+                    <div class="date">
+                        7
+                    </div>
+                    <div class="date">
+                        8
+                    </div>
+                    <div class="date">
+                        9
+                    </div>
+                    <div class="date">
+                        10
+                    </div>
+                    <div class="date">
+                        11
+                    </div>
+                    <div class="date">
+                        12
+                    </div>
+                    <div class="date">
+                        13
+                    </div>
+                    <div class="date">
+                        14
+                    </div>
+                    <div class="date">
+                        15
+                    </div>
+                    <div class="date">
+                        16
+                    </div>
+                    <div class="date">
+                        17
+                        <div class="event-popup">
+                            <div class="popup-image" style="background-image: url('/images/calendar4.jpg');"></div>
+                            <div class="popup-details">
+                                <h4>Project Launch</h4>
+                                <div class="event-info">
+                                    <div class="event-dp" style="background-image: url('/images/team1.jpg');"></div>
+                                    <p>Online, 11:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date">
+                        18
+                    </div>
+                    <div class="date">
+                        19
+                    </div>
+                    <div class="date">
+                        20
+                        <div class="event-popup">
+                            <div class="popup-image" style="background-image: url('/images/calendar1.jpg');"></div>
+                            <div class="popup-details">
+                                <h4>Design Conference</h4>
+                                <div class="event-info">
+                                    <div class="event-dp" style="background-image: url('/images/team5.webp');"></div>
+                                    <p>LA, 9:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="date">
+                        21
+                    </div>
+                    <div class="date">
+                        22
+                    </div>
+                    <div class="date">
+                        23
+                    </div>
+                    <div class="date">
+                        24
+                        <div class="event-popup">
+                            <div class="popup-image" style="background-image: url('/images/calendar3.jpeg');"></div>
+                            <div class="popup-details">
+                                <h4>Meeting with Bob</h4>
+                                <div class="event-info">
+                                    <div class="event-dp" style="background-image: url('/images/team12.webp');"></div>
+                                    <p>NewYorkOffice,10:00AM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date">
+                        25
+                    </div>
+                    <div class="date">
+                        26
+                    </div>
+                    <div class="date">
+                        27
+                    </div>
+                    <div class="date">
+                        28
+                    </div>
+                    <div class="date">
+                        29
+                    </div>
+                    <div class="date">
+                        30
+                        <div class="event-popup">
+                            <div class="popup-image" style="background-image: url('/images/calendar2.jpg');"></div>
+                            <div class="popup-details">
+                                <h4>Weekend Festival</h4>
+                                <div class="event-info">
+                                    <div class="event-dp" style="background-image: url('/images/team8.webp');"></div>
+                                    <p>Goa, 7:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+</body>
+</html>

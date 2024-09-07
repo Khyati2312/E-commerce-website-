@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Lists</title>
+    <link rel="stylesheet" href="order_lists.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>DashStack</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="favourites.html">Favorites</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li class="section">Pages</li>
+                <li class="active"><a href="order_lists.html">Order Lists</a></li>
+                <li><a href="product_stock.html">Product Stock</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="to_do.html">To-Do</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="invoice.html">Invoice</a></li>
+                <li><a href="ui_elements.html">UI Elements</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="header-icons">
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="#"><i class="fas fa-flag"></i></a>
+                    <a href="#">English <i class="fas fa-angle-down"></i></a>
+                    <a href="#" class="user-profile">
+                        <img src="https://via.placeholder.com/30" alt="User">
+                        Gandhi Khyati
+                    </a>
+                </div>
+            </header>
+
+            <section class="order-lists">
+                <h2>Order Lists</h2>
+                <div class="filters">
+                    <select>
+                        <option>Filter By</option>
+                    </select>
+                    <select>
+                        <option>Date</option>
+                    </select>
+                    <select>
+                        <option>Order Type</option>
+                    </select>
+                    <select>
+                        <option>Order Status</option>
+                    </select>
+                    <button class="reset-filter">Reset Filter</button>
+                </div>
+
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>00001</td>
+                            <td>Christine Brooks</td>
+                            <td>089 Kutch Green Apt. 448</td>
+                            <td>04 Sep 2019</td>
+                            <td>Electric</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>00002</td>
+                            <td>Rosie Pearson</td>
+                            <td>979 Immanuel Ferry Suite 526</td>
+                            <td>28 May 2019</td>
+                            <td>Book</td>
+                            <td><span class="status processing">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>00003</td>
+                            <td>Darrell Caldwell</td>
+                            <td>8587 Frida Ports</td>
+                            <td>23 Nov 2019</td>
+                            <td>Medicine</td>
+                            <td><span class="status rejected">Rejected</span></td>
+                        </tr>
+                        <tr>
+                            <td>00004</td>
+                            <td>Gilbert Johnston</td>
+                            <td>768 Destiny Lake Suite 600</td>
+                            <td>05 Feb 2019</td>
+                            <td>Mobile</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>00005</td>
+                            <td>Alan Cain</td>
+                            <td>042 Mylene Throughway</td>
+                            <td>29 Jul 2019</td>
+                            <td>Watch</td>
+                            <td><span class="status processing">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>00006</td>
+                            <td>Alfred Murray</td>
+                            <td>543 Weinmann Mountain</td>
+                            <td>15 Aug 2019</td>
+                            <td>Medicine</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>00007</td>
+                            <td>Maggie Sullivan</td>
+                            <td>New Scottieberg</td>
+                            <td>21 Dec 2019</td>
+                            <td>Watch</td>
+                            <td><span class="status processing">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>00008</td>
+                            <td>Rosie Todd</td>
+                            <td>New Jon</td>
+                            <td>30 Apr 2019</td>
+                            <td>Medicine</td>
+                            <td><span class="status on_hold">On Hold</span></td>
+                        </tr>
+                        <tr>
+                            <td>00009</td>
+                            <td>Dollie Hines</td>
+                            <td>124 Lyla Forge Suite 975</td>
+                            <td>09 Jan 2019</td>
+                            <td>Book</td>
+                            <td><span class="status in_transit">In Transit</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pagination">
+                    <span>Showing 1-09 of 78</span>
+                    <div class="pagination-controls">
+                        <button>❮</button>
+                        <button>❯</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

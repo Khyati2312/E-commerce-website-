@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>DashStack</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="favourites.html">Favorites</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li class="section">Pages</li>
+                <li><a href="order_lists.html">Order Lists</a></li>
+                <li><a href="product_stock.html">Product Stock</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="to_do.html">To-Do</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="invoice.html">Invoice</a></li>
+                <li><a href="ui_elements.html">UI Elements</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="header-icons">
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="#"><i class="fas fa-flag"></i></a>
+                    <a href="#">English <i class="fas fa-angle-down"></i></a>
+                    <a href="#" class="user-profile">
+                        <img src="https://via.placeholder.com/30" alt="User">
+                        Gandhi Khyati
+                    </a>
+                </div>
+            </header>
+            <div class="revenue-chart card">
+                <canvas id="revenueChart"></canvas>
+            </div>
+            <div class="cards-row">
+                <div class="customers card">
+                    <canvas id="customersChart"></canvas>
+                    <p>34,249 <span>New Customers</span></p>
+                    <p>1420 <span>Repeated</span></p>
+                </div>
+                <div class="featured-product card">
+                    <p>Featured Product</p>
+                    <p>Beats Headphone 2019</p>
+                    <p>$89.00</p>
+                </div>
+                <div class="sales-analytics card">
+                    <canvas id="salesAnalyticsChart"></canvas>
+                    <p>Sales Analytics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    height: 150vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 15px 0;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li.active a {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.sidebar .section{
+    font-size: 15px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.sidebar .section li{
+    padding: 10px;
+    margin: 15px 0;
+    display: block;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header-icons a {
+    color: #333;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.inbox-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.left-card {
+    width: 200px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.compose-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.compose-btn:hover {
+    background-color: #2980b9;
+}
+.sidebar-inbox a {
+    display: flex;
+    align-items: center;
+    color: #34495e;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.sidebar-inbox a i {
+    margin-right: 10px;
+    color: #7f8c8d;
+}
+.sidebar-inbox a:hover {
+    background-color: #ecf0f1;
+}
+.sidebar-inbox .sidebar-title {
+    color: #95a5a6;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+/* Right Card */
+.right-card {
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.right-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.search-bar-right {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    width: 300px;
+}
+.right-icons {
+    display: flex;
+    gap: 15px;
+}
+.right-icons i {
+    font-size: 18px;
+    color: #7f8c8d;
+    cursor: pointer;
+}
+.email-list {
+    margin-top: 20px;
+}
+.email-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.email-item:hover {
+    background-color: #f9f9f9;
+}
+.email-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+.email-item i {
+    margin-right: 15px;
+    color: #efd90f;
+}
+.email-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.email-details .sender {
+    font-weight: bold;
+    color:  #34495e;
+}
+.email-details .subject {
+    color: #7f8c8d;
+    margin-top: 2px;
+}
+.email-item .time {
+    color: #7f8c8d;
+    font-size: 12px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+    .inbox-section {
+        flex-direction: column;
+    }
+    .left-card, .right-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
